@@ -12,6 +12,7 @@ public class Config implements Serializable {
         return kundens;
     }
 
+
     public static Config instance(){
         if(config == null){
             config = new Config();

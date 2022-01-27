@@ -1,7 +1,7 @@
 package com.example.webapprest.bean.types;
 
 public enum Geschlecht {
-    Männlich,
+    Mannlich,
     Weiblich,
     Divers
 

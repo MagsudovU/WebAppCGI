@@ -8,4 +8,5 @@ public interface KundenServiceInter {
     void addKunden(Kunden kunden);
     List<Kunden> getAllKunden();
     void updateKunden(int index, Kunden kunden);
+    void delete(int index);
 }

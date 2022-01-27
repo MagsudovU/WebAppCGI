@@ -60,6 +60,11 @@ public class ControllerServlet extends HttpServlet {
 
 
             }
+            if(action.equals("delete")){
+                int index = Integer.parseInt(req.getParameter("id"));
+
+                service.delete(index);
+            }
         }catch (Exception e){
             e.printStackTrace();
         }

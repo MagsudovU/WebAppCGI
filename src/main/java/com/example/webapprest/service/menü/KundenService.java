@@ -25,4 +25,11 @@ public class KundenService implements KundenServiceInter {
         config.getKundens().set(index, kunden);
     }
 
+    @Override
+    public void delete(int index) {
+    config.getKundens().remove(index);
+
+    }
+
+
 }
