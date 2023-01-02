@@ -4,9 +4,6 @@ pipeline {
             label 'windows-temp-j'
             }
       }
-    ttriggers {
-        pollSCM '* * * * *'
-    }
     stages {
         stage('Build') {
             steps {
