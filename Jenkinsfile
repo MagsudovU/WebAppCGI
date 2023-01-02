@@ -8,8 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                cd WebAppCGI
-                maven build
+                mvn package -B
+                ls
             }
         }
         stage('Test') {
