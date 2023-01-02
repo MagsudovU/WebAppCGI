@@ -8,6 +8,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
+                cd WebAppCGI
+                maven install -r requirements.txt
             }
         }
         stage('Test') {
