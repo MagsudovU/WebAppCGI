@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Building.."
                 cd WebAppCGI
-                maven install -r requirements.txt
+                mvn install -r requirements.txt
             }
         }
         stage('Test') {
