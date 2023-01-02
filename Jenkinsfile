@@ -8,8 +8,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                mvn package -B
-                ls
             }
         }
         stage('Test') {
