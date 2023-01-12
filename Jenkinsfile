@@ -1,23 +1,10 @@
+/* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { 
-        node {
-            label 'windows-temp-j'
-            }
-      }
+    agent { docker { image 'openjdk:latest' } }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                echo "Building.."
-            }
-        }
-        stage('Test') {
-            steps {
-                echo "Testing.."
-            }
-        }
-        stage('Deliver') {
-            steps {
-                echo 'Deliver....'
+                sh 'mvn --version'
             }
         }
     }
